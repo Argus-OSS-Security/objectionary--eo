@@ -3,10 +3,11 @@
 ---
 # yamllint disable rule:line-length
 name: trufflehog-oss
-'on':
-  push:
-    branches:
-      - master
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
 permissions:
   contents: read
 concurrency:

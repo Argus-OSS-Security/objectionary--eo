@@ -4,12 +4,13 @@
 # yamllint disable rule:line-length
 name: eo-maven-plugin-site
 run-name: "eo-maven-plugin site publication"
-'on':
-  push:
-    tags:
-      - '*'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     tags:
+#       - '*'
+#   workflow_dispatch:
+# 
 permissions:
   contents: write
 concurrency:

@@ -4,11 +4,12 @@
 # yamllint disable rule:line-length
 name: inference
 run-name: "inference report publication"
-'on':
-  push:
-    tags:
-      - '*'
-  workflow_dispatch:
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     tags:
+#       - '*'
+#   workflow_dispatch:
 permissions:
   contents: write
 concurrency:

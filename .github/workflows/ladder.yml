@@ -3,22 +3,23 @@
 ---
 # yamllint disable rule:line-length
 name: ladder
-'on':
-  pull_request:
-    branches:
-      - master
-    # The numbers can only move when the rules move or when the program they
-    # are read from does. A branch that touches neither would spend two builds
-    # proving that nothing happened, and a pattern reaching wider than
-    # `src/main` spends them on every bump of a dependency in a `pom.xml`. This
-    # file is on the list as well, since a branch that changes how the numbers
-    # are measured is the one branch that has to measure them.
-    paths:
-      - 'eo-inference/src/main/**'
-      - 'eo-parser/src/main/**'
-      - 'eo-maven-plugin/src/main/**'
-      - 'eo-runtime/src/main/eo/**'
-      - '.github/workflows/ladder.yml'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   pull_request:
+#     branches:
+#       - master
+#     # The numbers can only move when the rules move or when the program they
+#     # are read from does. A branch that touches neither would spend two builds
+#     # proving that nothing happened, and a pattern reaching wider than
+#     # `src/main` spends them on every bump of a dependency in a `pom.xml`. This
+#     # file is on the list as well, since a branch that changes how the numbers
+#     # are measured is the one branch that has to measure them.
+#     paths:
+#       - 'eo-inference/src/main/**'
+#       - 'eo-parser/src/main/**'
+#       - 'eo-maven-plugin/src/main/**'
+#       - 'eo-runtime/src/main/eo/**'
+#       - '.github/workflows/ladder.yml'
 permissions:
   contents: read
 concurrency:

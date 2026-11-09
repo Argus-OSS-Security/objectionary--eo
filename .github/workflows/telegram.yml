@@ -3,10 +3,11 @@
 ---
 # yamllint disable rule:line-length
 name: telegram
-'on':
-  push:
-    tags:
-      - '*'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     tags:
+#       - '*'
 permissions:
   contents: read
 concurrency:

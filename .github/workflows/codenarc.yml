@@ -3,21 +3,22 @@
 ---
 # yamllint disable rule:line-length
 name: codenarc
-'on':
-  push:
-    branches:
-      - master
-    paths:
-      - '**.groovy'
-      - '.github/workflows/codenarc.yml'
-      - '.codenarc'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - '**.groovy'
-      - '.github/workflows/codenarc.yml'
-      - '.codenarc'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
+#     paths:
+#       - '**.groovy'
+#       - '.github/workflows/codenarc.yml'
+#       - '.codenarc'
+#   pull_request:
+#     branches:
+#       - master
+#     paths:
+#       - '**.groovy'
+#       - '.github/workflows/codenarc.yml'
+#       - '.codenarc'
 permissions:
   contents: read
 concurrency:

@@ -3,10 +3,11 @@
 ---
 # yamllint disable rule:line-length
 name: lock-closed-issues
-'on':
-  schedule:
-    - cron: '0 14 * * *'
-  workflow_dispatch:
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   schedule:
+#     - cron: '0 14 * * *'
+#   workflow_dispatch:
 permissions:
   issues: write
 concurrency:

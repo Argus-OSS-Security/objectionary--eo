@@ -3,12 +3,13 @@
 ---
 # yamllint disable rule:line-length
 name: up
-'on':
-  push:
-    branches:
-      - master
-    tags:
-      - '*'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
+#     tags:
+#       - '*'
 permissions:
   contents: write
   pull-requests: write

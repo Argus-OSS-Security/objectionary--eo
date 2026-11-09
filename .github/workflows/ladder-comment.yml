@@ -3,14 +3,15 @@
 ---
 # yamllint disable rule:line-length
 name: ladder-comment
-'on':
-  workflow_run:
-    workflows: ["ladder"]
-    types:
-      - completed
-# The artifact belongs to another run, so reading it needs a scope of its
-# own. A `permissions` block that names one scope silences every scope it
-# does not name, and the download would answer 403.
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   workflow_run:
+#     workflows: ["ladder"]
+#     types:
+#       - completed
+# # The artifact belongs to another run, so reading it needs a scope of its
+# # own. A `permissions` block that names one scope silences every scope it
+# # does not name, and the download would answer 403.
 permissions:
   actions: read
   contents: read

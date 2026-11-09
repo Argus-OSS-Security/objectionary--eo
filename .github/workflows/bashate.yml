@@ -3,19 +3,20 @@
 ---
 # yamllint disable rule:line-length
 name: bashate
-'on':
-  push:
-    branches:
-      - master
-    paths:
-      - '**.sh'
-      - '.github/workflows/bashate.yml'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - '**.sh'
-      - '.github/workflows/bashate.yml'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
+#     paths:
+#       - '**.sh'
+#       - '.github/workflows/bashate.yml'
+#   pull_request:
+#     branches:
+#       - master
+#     paths:
+#       - '**.sh'
+#       - '.github/workflows/bashate.yml'
 permissions:
   contents: read
 concurrency:

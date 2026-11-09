@@ -2,10 +2,11 @@
 # SPDX-License-Identifier: MIT
 ---
 name: counts
-'on':
-  pull_request_target:
-    branches:
-      - master
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   pull_request_target:
+#     branches:
+#       - master
 permissions:
   contents: read
   pull-requests: write

@@ -4,9 +4,10 @@
 # yamllint disable rule:line-length
 name: zerocracy
 run-name: "Zerocracy judges"
-'on':
-  schedule:
-    - cron: '36 * * * *'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   schedule:
+#     - cron: '36 * * * *'
 permissions:
   contents: write
 concurrency:

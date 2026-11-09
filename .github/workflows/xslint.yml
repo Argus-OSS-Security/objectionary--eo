@@ -3,21 +3,22 @@
 ---
 # yamllint disable rule:line-length
 name: xslint
-'on':
-  push:
-    branches:
-      - master
-    paths:
-      - '**.xsl'
-      - '.github/workflows/xslint.yml'
-      - '.xslint.yml'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - '**.xsl'
-      - '.github/workflows/xslint.yml'
-      - '.xslint.yml'
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
+#     paths:
+#       - '**.xsl'
+#       - '.github/workflows/xslint.yml'
+#       - '.xslint.yml'
+#   pull_request:
+#     branches:
+#       - master
+#     paths:
+#       - '**.xsl'
+#       - '.github/workflows/xslint.yml'
+#       - '.xslint.yml'
 permissions:
   contents: read
 concurrency:
